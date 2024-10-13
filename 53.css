@@ -1,0 +1,926 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            background-image: url(Assets/background\ netflix.jpg);
+            background-position: center center;
+            background-size: max(1200px, 100vw);
+            background-repeat: no-repeat;
+            height: 78vh;
+            position: relative;
+        }
+
+        .main .box {
+            height: 78vh;
+            width: 100%;
+            opacity: 0.69;
+            position: absolute;
+            top: 0;
+            background-color: black;
+        }
+
+        nav {
+            max-width: 60vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            height: 100px;
+        }
+
+        nav img {
+            color: red;
+            width: 133px;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: Calc(100% - 100px);
+            position: relative;
+            gap: 23px;
+            padding: 0 30px;
+        }
+
+        .hero> :nth-child(1) {
+            font-family: 'Poppins', sans-serif;
+            margin: 0px 14% 0px 14%;
+            text-align: center;
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 70px;
+        }
+
+        .hero> :nth-child(2) {
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .hero> :nth-child(3) {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .sepration {
+            height: 7px;
+            background-color: rgba(128, 128, 128, 0.281);
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .main input {
+            padding: 10px 100px 13px 14px;
+            color: white;
+            font-size: 12px;
+            border-radius: 3px;
+            background-color: rgba(23, 23, 23, 0.7);
+            border: 1px solid rgba(246, 238, 238, 0.5);
+        }
+
+        #lang {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #lang option {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 3px 8px;
+            font-weight: 400;
+            color: white;
+            border: 1px solid white;
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.094);
+        }
+
+        .red-btn {
+            background-color: red;
+            font-weight: 400;
+            padding: 6px 24px;
+            font-size: 20px;
+            border-radius: 3px;
+        }
+
+        .btn-red-sm {
+            background-color: red;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 70vw;
+            margin: auto;
+            color: white;
+        }
+
+        .secImage {
+            position: relative;
+            padding: 7px 0;
+        }
+
+        .secImage img {
+            width: 460px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .secImage video {
+            width: 400px;
+            position: absolute;
+            top: 106px;
+            right: 0px;
+        }
+
+        .first>div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 34px 0;
+        }
+
+        .first>div :nth-child(1) {
+            font-size: 48px;
+            font-weight: bolder;
+        }
+
+        .first>div :nth-child(2) {
+            font-size: 24px;
+        }
+
+        .third .secImage video {
+            position: absolute;
+            right: 90px;
+            width: 62%;
+            top: 75px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 48px;
+        }
+
+        .faq {
+            background-color: #000;
+            color: white;
+            padding: 30px 0 60px 0;
+        }
+
+        .faqbox {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(65, 65, 65);
+            padding: 1.5rem;
+            max-width: 60vw;
+            margin: 24px auto;
+            cursor: pointer;
+            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        }
+
+        .faqbox:hover {
+            background-color: rgb(91, 91, 91);
+            transition: all 1s ease-in-out;
+        }
+
+        .par {
+            position: relative;
+            top: 3px;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .afque {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 30px;
+        }
+
+        .afque input {
+            position: relative;
+            bottom: -3px;
+            padding: 10px 100px 13px 14px;
+            height: 13px;
+            margin: -4px 14px;
+            color: white;
+            font-size: 12px;
+            border-radius: 3px;
+            background-color: rgba(23, 23, 23, 0.7);
+            border: 1px solid rgba(246, 238, 238, 0.5);
+        }
+
+        footer {
+            color: white;
+            max-width: 60vw;
+            margin: auto;
+            padding: 14px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .footer a {
+            color: white;
+            font-size: 14px;
+        }
+
+        footer .questions {
+            padding: 34px 0;
+        }
+
+        .footer_item {
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+        }
+
+        #last {
+            background-color: transparent;
+            color: white;
+            padding: 4px 9px;
+            margin: 20px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #last option {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .para {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .main {
+                height: 85vh;
+            }
+
+            .main .box {
+                height: 85vh;
+            }
+
+            nav {
+                max-width: 90vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: auto;
+                height: 100px;
+            }
+
+            nav img {
+                color: red;
+                width: 110px;
+                top: 5px;
+            }
+
+            .btn {
+                padding: 10px 18px;
+                letter-spacing: 1px;
+                font-weight: 500;
+                border-radius: 5px;
+            }
+
+            .hero> :nth-child(1) {
+                font-family: 'Poppins', sans-serif;
+                margin: 0px 2% 0px 2%;
+                text-align: center;
+                font-size: 32px;
+                font-weight: 790;
+                line-height: 40px;
+            }
+
+            .hero> :nth-child(2) {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .hero> :nth-child(3) {
+                font-weight: 500;
+                font-size: 17px;
+                text-align: center;
+                max-width: 63vw;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            .main input {
+                padding: 15px 100px 16px 14px;
+                color: white;
+                font-size: 14px;
+                border-radius: 3px;
+                background-color: rgba(23, 23, 23, 0.7);
+                border: 1px solid rgba(246, 238, 238, 0.5);
+            }
+
+            .red-btn {
+                background-color: red;
+                font-weight: 400;
+                padding: 12px 32px;
+                font-size: 20px;
+                border-radius: 3px;
+            }
+
+            .first>div :nth-child(1) {
+                font-size: 32px;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            .first>div :nth-child(2) {
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            .secImage img {
+                width: 350px;
+            }
+
+            .secImage video {
+                width: 304px;
+                top: 89px;
+            }
+
+            .third .secImage video {
+                right: 69px;
+                top: 70px;
+            }
+
+            .first {
+                flex-wrap: wrap;
+            }
+
+            .faqbox {
+                max-width: 72vw;
+            }
+
+            .faq h2 {
+                font-size: 36px;
+            }
+
+            .par {
+                max-width: 270px;
+                margin: auto;
+            }
+
+            .afque {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin: auto;
+                align-items: center;
+            }
+
+            .footer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 300px;
+            }
+
+            .footer_item:nth-child(3) {
+                padding: 23px 0;
+            }
+
+            .footer_item:nth-child(4) {
+                padding: 23px 0;
+            }
+
+            footer {
+                max-width: 87vw;
+            }
+
+            #last {
+                margin: 6px 0;
+            }
+
+            .para {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            background-image: url(Assets/background\ netflix.jpg);
+            background-position: center center;
+            background-size: max(120.0rem, 100vw);
+            background-repeat: no-repeat;
+            height: 78vh;
+            position: relative;
+        }
+
+        .main .box {
+            height: 78vh;
+            width: 100%;
+            opacity: 0.69;
+            position: absolute;
+            top: 0;
+            background-color: black;
+        }
+
+        nav {
+            max-width: 60vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            height: 10.0rem;
+        }
+
+        nav img {
+            color: red;
+            width: 13.3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav button {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero {
+            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: Calc(100% - 10.0rem);
+            position: relative;
+            gap: 2.3rem;
+            padding: 0 3.0rem;
+        }
+
+        .hero> :nth-child(1) {
+            font-family: 'Poppins', sans-serif;
+            margin: 0rem 14% 0rem 14%;
+            text-align: center;
+            font-size: 5.2rem;
+            font-weight: 800;
+            line-height: 7.0rem;
+        }
+
+        .hero> :nth-child(2) {
+            font-weight: 500;
+            font-size: 2.0rem;
+            text-align: center;
+        }
+
+        .hero> :nth-child(3) {
+            font-weight: 400;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .sepration {
+            height: .7rem;
+            background-color: rgba(128, 128, 128, 0.281);
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.6rem;
+        }
+
+        .main input {
+            padding: 1.0rem 10.0rem 1.3rem 1.4rem;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: .3rem;
+            background-color: rgba(23, 23, 23, 0.7);
+            border: .1rem solid rgba(246, 238, 238, 0.5);
+        }
+
+        #lang {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #lang option {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: .3rem .8rem;
+            font-weight: 400;
+            color: white;
+            border: .1rem solid white;
+            border-radius: .3rem;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.094);
+        }
+
+        .red-btn {
+            background-color: red;
+            font-weight: 400;
+            padding: .6rem .24rem;
+            font-size: 2.0rem;
+            border-radius: .3rem;
+        }
+
+        .btn-red-sm {
+            background-color: red;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 70vw;
+            margin: auto;
+            color: white;
+        }
+
+        .secImage {
+            position: relative;
+            padding: .7rem 0;
+        }
+
+        .secImage img {
+            width: 46.0rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .secImage video {
+            width: 40.0rem;
+            position: absolute;
+            top: 10.6rem;
+            right: 0rem;
+        }
+
+        .first>div {
+            display: flex;
+            flex-direction: column;
+            gap: 2.0rem;
+            padding: 3.4rem 0;
+        }
+
+        .first>div :nth-child(1) {
+            font-size: 4.8rem;
+            font-weight: bolder;
+        }
+
+        .first>div :nth-child(2) {
+            font-size: 2.4rem;
+        }
+
+        .third .secImage video {
+            position: absolute;
+            right: 9.0rem;
+            width: 62%;
+            top: 7.5rem;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 4.8rem;
+        }
+
+        .faq {
+            background-color: #000;
+            color: white;
+            padding: 3.0rem 0 6.0rem 0;
+        }
+
+        .faqbox {
+            font-size: 2.0rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(65, 65, 65);
+            padding: 1.5rem;
+            max-width: 60vw;
+            margin: 2.4rem auto;
+            cursor: pointer;
+            font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        }
+
+        .faqbox:hover {
+            background-color: rgb(91, 91, 91);
+            transition: all 1s ease-in-out;
+        }
+
+        .par {
+            position: relative;
+            top: .3rem;
+            color: white;
+            font-weight: 400;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .afque {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 3.0rem;
+        }
+
+        .afque input {
+            position: relative;
+            bottom: -.3rem;
+            padding: 1.0rem 10.0rem 1.3rem 1.4rem;
+            height: 13rem;
+            margin: -.4rem 1.4rem;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: .3rem;
+            background-color: rgba(23, 23, 23, 0.7);
+            border: .1rem solid rgba(246, 238, 238, 0.5);
+        }
+
+        footer {
+            color: white;
+            max-width: 60vw;
+            margin: auto;
+            padding: 1.4rem;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .footer a {
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        footer .questions {
+            padding: 3.4rem 0;
+        }
+
+        .footer_item {
+            display: flex;
+            flex-direction: column;
+            gap: 2.3rem;
+        }
+
+        #last {
+            background-color: transparent;
+            color: white;
+            padding: .4rem .9rem;
+            margin: 2.0rem 0;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+
+        #last option {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .para {
+            font-size: 1.4rem;
+        }
+
+        @media screen and (max-width: 1300px) {
+            html {
+                font-size: 40%;
+            } */
+            /* .main {
+                height: 85vh;
+            }
+
+            .main .box {
+                height: 85vh;
+            }
+
+            nav {
+                max-width: 90vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: auto;
+                height: 100px;
+            }
+
+            nav img {
+                color: red;
+                width: 110px;
+                top: 5px;
+            }
+
+            .btn {
+                padding: 10px 18px;
+                letter-spacing: 1px;
+                font-weight: 500;
+                border-radius: 5px;
+            }
+
+            .hero> :nth-child(1) {
+                font-family: 'Poppins', sans-serif;
+                margin: 0px 2% 0px 2%;
+                text-align: center;
+                font-size: 32px;
+                font-weight: 790;
+                line-height: 40px;
+            }
+
+            .hero> :nth-child(2) {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .hero> :nth-child(3) {
+                font-weight: 500;
+                font-size: 17px;
+                text-align: center;
+                max-width: 63vw;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            .main input {
+                padding: 15px 100px 16px 14px;
+                color: white;
+                font-size: 14px;
+                border-radius: 3px;
+                background-color: rgba(23, 23, 23, 0.7);
+                border: 1px solid rgba(246, 238, 238, 0.5);
+            }
+
+            .red-btn {
+                background-color: red;
+                font-weight: 400;
+                padding: 12px 32px;
+                font-size: 20px;
+                border-radius: 3px;
+            }
+
+            .first>div :nth-child(1) {
+                font-size: 32px;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            .first>div :nth-child(2) {
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            .secImage img {
+                width: 350px;
+            }
+
+            .secImage video {
+                width: 304px;
+                top: 89px;
+            }
+
+            .third .secImage video {
+                right: 69px;
+                top: 70px;
+            }
+
+            .first {
+                flex-wrap: wrap;
+            }
+
+            .faqbox {
+                max-width: 72vw;
+            }
+
+            .faq h2 {
+                font-size: 36px;
+            }
+
+            .par {
+                max-width: 270px;
+                margin: auto;
+            }
+
+            .afque {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin: auto;
+                align-items: center;
+            }
+
+            .footer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 300px;
+            }
+
+            .footer_item:nth-child(3) {
+                padding: 23px 0;
+            }
+
+            .footer_item:nth-child(4) {
+                padding: 23px 0;
+            }
+
+            footer {
+                max-width: 87vw;
+            }
+
+            #last {
+                margin: 6px 0;
+            }
+
+            .para {
+                font-size: 14px;
+                margin: 10px 0;
+            } */
+        /* } */
